@@ -1,0 +1,438 @@
+   /* CSS styles */
+   @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Shafarik&display=swap');
+   body {
+    font-family: 'Delicious Handrawn', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #164a01, #00953e, #016a22);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("https://wallpapers.com/images/high/smirking-pepe-the-frog-neon-osk9ldzbawy6hedj.webp");
+    padding: 1rem 0;
+    transform: rotate(-2deg);
+    margin-bottom: 2rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fbbf24;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://wallpapers.com/images/high/smirking-pepe-the-frog-neon-osk9ldzbawy6hedj.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transform: rotate(2deg);
+    margin-bottom: 2rem;
+    animation: float 8s ease-in-out infinite;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #fbbf24;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #fbbf24;
+    color: #1e40af;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f59e0b;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+    transform: rotate(-2deg);
+    margin-bottom: 2rem;
+    animation: float 7s ease-in-out infinite;
+}
+
+.section:nth-child(even) {
+    transform: rotate(2deg);
+    animation-duration: 9s;
+}
+
+.section h2 {
+    font-size: 3rem;
+    color: #fbbf24;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.token-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.token-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fbbf24;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, background-color 0.3s;
+    transform: rotate(-5deg);
+    animation: float 6s ease-in-out infinite;
+}
+
+.token-card:nth-child(even) {
+    transform: rotate(5deg);
+    animation-duration: 8s;
+}
+
+.token-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotate(0);
+}
+
+.token-card h3 {
+    font-size: 1.5rem;
+    color: #fbbf24;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap {
+    max-width: 800px;
+    margin: 0 auto;
+    transform: rotate(-5deg);
+}
+
+.roadmap-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s, background-color 0.3s;
+    transform: translateX(20px) rotate(2deg);
+    animation: float 7s ease-in-out infinite;
+}
+
+.roadmap-item:nth-child(even) {
+    transform: translateX(-20px) rotate(-2deg);
+    animation-duration: 9s;
+}
+
+.roadmap-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02) translateX(20px) rotate(0);
+}
+
+.roadmap-item:nth-child(even):hover {
+    transform: scale(1.02) translateX(-20px) rotate(0);
+}
+
+.roadmap-item h3 {
+    font-size: 1.8rem;
+    color: #fbbf24;
+    margin-bottom: 0.5rem;
+}
+
+.community-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.community-links a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.3s;
+    transform: rotate(-5deg);
+    animation: float 6s ease-in-out infinite;
+}
+
+.community-links a:nth-child(even) {
+    transform: rotate(5deg);
+    animation-duration: 8s;
+}
+
+.community-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotate(0);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    transform: rotate(2deg);
+    animation: float 8s ease-in-out infinite;
+}
+
+.floating-character {
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: -1;
+    animation: float 20s ease-in-out infinite;
+}
+
+.floating-character:hover {
+    opacity: 1;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(10px, -10px) rotate(2deg);
+    }
+    50% {
+        transform: translate(-5px, 5px) rotate(-2deg);
+    }
+    75% {
+        transform: translate(-10px, -5px) rotate(1deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-images img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    transform: rotate(-5deg);
+    animation: float 7s ease-in-out infinite;
+}
+
+.about-images img:nth-child(even) {
+    transform: rotate(5deg);
+    animation-duration: 9s;
+}
+
+.about-images img:hover {
+    transform: scale(1.1) rotate(0);
+}
+
+.how-to-buy-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.step-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fbbf24;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: calc(50% - 0.5rem);
+    max-width: 300px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, background-color 0.3s;
+    transform: rotate(-3deg);
+    animation: float 8s ease-in-out infinite;
+}
+
+.step-card:nth-child(even) {
+    transform: rotate(3deg);
+    animation-duration: 10s;
+}
+
+.step-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotate(0);
+}
+
+.step-card h3 {
+    font-size: 1.5rem;
+    color: #fbbf24;
+    margin-bottom: 0.5rem;
+}
+
+.step-card p {
+    font-size: 1rem;
+}
+
+.pinksale-embed {
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(-3deg);
+    margin-bottom: 2rem;
+    animation: float 9s ease-in-out infinite;
+}
+
+.pinksale-embed iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotate(3deg);
+}
+
+.presale-announcement {
+    margin-bottom: 1rem;
+    animation: float 5s ease-in-out infinite;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.presale-title {
+    font-size: 2.5rem;
+    color: #fbbf24;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: float 7s ease-in-out infinite;
+}
+
+.presale-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    animation: float 8s ease-in-out infinite;
+}
+
+.presale-timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+    animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+    }
+
+    .token-info {
+        flex-direction: column;
+    }
+
+    .community-links {
+        flex-direction: column;
+    }
+
+    .roadmap {
+        transform: none;
+    }
+
+    .roadmap-item, .roadmap-item:nth-child(even) {
+        transform: none;
+    }
+
+    .roadmap-item:hover, .roadmap-item:nth-child(even):hover {
+        transform: scale(1.02);
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .pinksale-embed iframe {
+        height: 400px;
+    }
+}
